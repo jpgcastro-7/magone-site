@@ -1,13 +1,51 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+import HeroSection from "@/components/HeroSection";
+import FeaturedMachines from "@/components/FeaturedMachines";
+import ServicesSection from "@/components/ServicesSection";
+import BrandsSection from "@/components/BrandsSection";
+import DifferentialsSection from "@/components/DifferentialsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import CTASection from "@/components/CTASection";
+import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <SEOHead
+        title="Compra e Venda de Máquinas Injetoras para Plástico"
+        description="Magone: compra e venda de máquinas injetoras novas e usadas, fabricação de moldes e equipamentos industriais para plástico. +30 anos de experiência. Solicite um orçamento!"
+        canonical="/"
+      />
+
+      {/* JSON-LD Schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Magone",
+        "url": "https://www.magone.com.br",
+        "description": "Compra e venda de máquinas injetoras, fabricação de moldes e equipamentos industriais para plástico.",
+        "telephone": "+551135546399",
+        "email": "magone@magone.com.br",
+        "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
+        "sameAs": [],
+        "areaServed": "BR"
+      })}} />
+
+      <Header />
+      <main>
+        <HeroSection />
+        <FeaturedMachines />
+        <ServicesSection />
+        <BrandsSection />
+        <DifferentialsSection />
+        <TestimonialsSection />
+        <CTASection />
+      </main>
+      <Footer />
+      <WhatsAppFloat />
+    </>
   );
 };
 
