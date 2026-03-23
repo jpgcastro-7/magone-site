@@ -2,11 +2,9 @@ import { motion } from "framer-motion";
 import { Shield, Clock, Award, Truck, Headphones, DollarSign } from "lucide-react";
 
 const differentials = [
-  { icon: Clock, title: "+30 Anos de Mercado", description: "Experiência consolidada no setor de máquinas industriais para plástico." },
+  { icon: Clock, title: "+20 Anos de Mercado", description: "Experiência consolidada no setor de máquinas industriais para plástico." },
   { icon: Shield, title: "Garantia e Procedência", description: "Todas as máquinas com garantia de funcionamento e procedência comprovada." },
   { icon: Award, title: "Melhores Marcas", description: "Trabalhamos com as principais marcas mundiais de injetoras e equipamentos." },
-  { icon: Truck, title: "Logística Completa", description: "Transporte e instalação em todo o território nacional." },
-  { icon: Headphones, title: "Suporte Técnico", description: "Equipe técnica especializada para atender suas necessidades." },
   { icon: DollarSign, title: "Melhores Preços", description: "Condições comerciais competitivas para sua indústria crescer." },
 ];
 
