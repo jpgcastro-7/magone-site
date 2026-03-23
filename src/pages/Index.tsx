@@ -26,7 +26,7 @@ const Index = () => {
         "name": "Magone",
         "url": "https://www.magone.com.br",
         "description": "Compra e venda de máquinas injetoras, fabricação de moldes e equipamentos industriais para plástico.",
-        "telephone": "+551135546399",
+        "telephone": ["+551135546399", "+5511997240711", "+5511996109016"],
         "email": "magone@magone.com.br",
         "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
         "sameAs": [],
