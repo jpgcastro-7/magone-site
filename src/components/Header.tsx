@@ -31,12 +31,12 @@ const Header = () => {
             </a>
           </div>
           <a
-            href="https://wa.me/5511997240711?text=Olá! Gostaria de saber mais sobre máquinas injetoras."
+            href="https://wa.me/5511996109016?text=Olá! Gostaria de saber mais sobre máquinas injetoras."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 font-semibold hover:text-industrial-accent transition-colors"
           >
-            WhatsApp: (11) 99724-0711
+            WhatsApp: (11) 99610-9016
           </a>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Header = () => {
             </Link>
           ))}
           <Button variant="hero" size="lg" asChild className="ml-4">
-            <a href="https://wa.me/5511997240711?text=Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511996109016?text=Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer">
               Solicitar Orçamento
             </a>
           </Button>
@@ -98,7 +98,7 @@ const Header = () => {
               </Link>
             ))}
             <Button variant="hero" size="lg" asChild className="mt-2">
-              <a href="https://wa.me/5511997240711" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5511996109016" target="_blank" rel="noopener noreferrer">
                 Solicitar Orçamento
               </a>
             </Button>

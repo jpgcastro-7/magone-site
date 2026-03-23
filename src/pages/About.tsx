@@ -11,7 +11,7 @@ const About = () => {
     <>
       <SEOHead
         title="Sobre a Magone"
-        description="Conheça a Magone: mais de 30 anos de experiência em compra e venda de máquinas injetoras, fabricação de moldes e equipamentos industriais para plástico."
+        description="Conheça a Magone: mais de 20 anos de experiência em compra e venda de máquinas injetoras, fabricação de moldes e equipamentos industriais para plástico."
         canonical="/sobre"
       />
       <Header />
@@ -24,7 +24,7 @@ const About = () => {
           </div>
           <div className="container-industrial relative z-10 text-center">
             <h1 className="font-heading text-4xl md:text-5xl font-black text-primary-foreground">Sobre a Magone</h1>
-            <p className="text-primary-foreground/80 mt-4 text-lg max-w-2xl mx-auto">Mais de 30 anos transformando a indústria plástica brasileira</p>
+            <p className="text-primary-foreground/80 mt-4 text-lg max-w-2xl mx-auto">Há mais de 20 anos conectando você às melhores oportunidades de negócio</p>
           </div>
         </section>
 

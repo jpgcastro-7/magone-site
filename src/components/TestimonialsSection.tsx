@@ -1,23 +1,12 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
+// TODO: Substituir por depoimentos reais dos clientes
 const testimonials = [
   {
-    name: "Carlos Mendes",
-    company: "Plásticos São Paulo Ltda",
-    text: "Excelente atendimento! Compramos duas injetoras usadas e ambas estavam em perfeito estado. Recomendo a Magone para qualquer empresa do setor.",
-    rating: 5,
-  },
-  {
-    name: "Ana Rodrigues",
-    company: "Embalagens Premier",
-    text: "A fabricação do molde ficou impecável. Prazo cumprido e qualidade superior. Já estamos negociando novos projetos com a equipe.",
-    rating: 5,
-  },
-  {
-    name: "Roberto Silva",
-    company: "Injetech Industrial",
-    text: "Profissionais sérios e competentes. Venderam nossos equipamentos ociosos de forma rápida e justa. Parceria de confiança.",
+    name: "Cliente Satisfeito",
+    company: "Indústria de Plásticos",
+    text: "Em breve publicaremos depoimentos reais de nossos clientes. Entre em contato e faça parte da nossa história!",
     rating: 5,
   },
 ];

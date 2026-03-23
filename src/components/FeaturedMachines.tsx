@@ -79,7 +79,7 @@ const FeaturedMachines = () => {
                 <h3 className="font-heading font-bold text-foreground mb-1">{m.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{m.condition}</p>
                 <Button variant="hero" size="sm" className="w-full" asChild>
-                  <a href={`https://wa.me/5511997240711?text=Olá! Tenho interesse na ${m.title}`} target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/5511996109016?text=Olá! Tenho interesse na ${m.title}`} target="_blank" rel="noopener noreferrer">
                     Solicitar Cotação
                   </a>
                 </Button>
