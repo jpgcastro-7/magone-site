@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <h3 className="font-heading text-xl font-bold mb-4">Magone</h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-4">
-              Mais de 30 anos de experiência no mercado de máquinas injetoras, moldes e equipamentos industriais para plástico.
+              Há mais de 20 anos conectando você às melhores oportunidades de negócio no mercado de máquinas injetoras, moldes e equipamentos industriais para plástico.
             </p>
           </div>
 
