@@ -63,7 +63,7 @@ const Header = () => {
             </Link>
           ))}
           <Button variant="hero" size="lg" asChild className="ml-4">
-            <a href="https://wa.me/5511997240711?text=Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511996109016?text=Olá! Gostaria de solicitar um orçamento." target="_blank" rel="noopener noreferrer">
               Solicitar Orçamento
             </a>
           </Button>
