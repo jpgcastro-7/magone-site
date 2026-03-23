@@ -32,7 +32,6 @@ const HeroSection = () => {
             para Plástico
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed">
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed">
             Há mais de 20 anos conectando você às melhores oportunidades de negócio. Máquinas novas e usadas, moldes e equipamentos industriais para indústria plástica.
           </p>
 
