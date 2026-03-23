@@ -36,7 +36,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-1 font-semibold hover:text-industrial-accent transition-colors"
           >
-            WhatsApp: (11) 99724-0711
+            WhatsApp: (11) 99610-9016
           </a>
         </div>
       </div>
