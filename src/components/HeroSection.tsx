@@ -24,7 +24,7 @@ const HeroSection = () => {
           className="max-w-3xl"
         >
           <span className="inline-block rounded-full bg-industrial-accent/20 px-4 py-1.5 text-sm font-semibold text-industrial-accent mb-6 font-heading">
-            +30 anos de experiência
+            +20 anos de experiência
           </span>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-primary-foreground mb-6">
             Compra e Venda de{" "}
