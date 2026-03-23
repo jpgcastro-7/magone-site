@@ -31,7 +31,7 @@ const Header = () => {
             </a>
           </div>
           <a
-            href="https://wa.me/5511997240711?text=Olá! Gostaria de saber mais sobre máquinas injetoras."
+            href="https://wa.me/5511996109016?text=Olá! Gostaria de saber mais sobre máquinas injetoras."
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1 font-semibold hover:text-industrial-accent transition-colors"

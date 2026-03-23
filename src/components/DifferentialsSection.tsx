@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Clock, Award, Truck, Headphones, DollarSign } from "lucide-react";
+import { Shield, Clock, Award, DollarSign } from "lucide-react";
 
 const differentials = [
   { icon: Clock, title: "+20 Anos de Mercado", description: "Experiência consolidada no setor de máquinas industriais para plástico." },

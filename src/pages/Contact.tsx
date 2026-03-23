@@ -39,7 +39,7 @@ const Contact = () => {
                 <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Informações de Contato</h2>
                 <div className="space-y-6">
                   {[
-                    { icon: Phone, title: "Telefones", lines: ["(11) 3554-6399", "(11) 9.9610-9016", "(11) 9.9724-0711 (WhatsApp)"] },
+                    { icon: Phone, title: "Telefones", lines: ["(11) 3554-6399", "(11) 99724-0711", "(11) 99610-9016 (WhatsApp)"] },
                     { icon: Mail, title: "E-mail", lines: ["magone@magone.com.br"] },
                     { icon: MapPin, title: "Localização", lines: ["São Paulo, SP - Brasil"] },
                     { icon: Clock, title: "Horário de Atendimento", lines: ["Seg a Sex: 8h às 18h", "Sáb: 8h às 12h"] },
