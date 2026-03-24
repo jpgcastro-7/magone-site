@@ -24,8 +24,16 @@ const categories = ["Todos", "Injetora", "Sopradora", "Extrusora"];
 const brands = ["Todos", ...new Set(allMachines.map((m) => m.brand))];
 
 const Machines = () => {
+  const [searchParams] = useSearchParams();
   const [catFilter, setCatFilter] = useState("Todos");
   const [brandFilter, setBrandFilter] = useState("Todos");
+
+  useEffect(() => {
+    const tipo = searchParams.get("tipo");
+    const marca = searchParams.get("marca");
+    if (tipo) setCatFilter(tipo.charAt(0).toUpperCase() + tipo.slice(1));
+    if (marca) setBrandFilter(marca);
+  }, [searchParams]);
 
   const filtered = allMachines.filter((m) => {
     const catMatch = catFilter === "Todos" || m.category === catFilter.toLowerCase();
