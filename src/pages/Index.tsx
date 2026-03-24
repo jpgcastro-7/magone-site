@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import HeroSection from "@/components/HeroSection";
+import MachineSearch from "@/components/MachineSearch";
 import FeaturedMachines from "@/components/FeaturedMachines";
 import ServicesSection from "@/components/ServicesSection";
 import BrandsSection from "@/components/BrandsSection";
@@ -36,6 +37,7 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <MachineSearch />
         <FeaturedMachines />
         <ServicesSection />
         <BrandsSection />
