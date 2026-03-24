@@ -58,6 +58,7 @@ export default {
           light: "hsl(var(--industrial-light))",
           accent: "hsl(var(--industrial-accent))",
           success: "hsl(var(--industrial-success))",
+          teal: "hsl(var(--industrial-teal))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
