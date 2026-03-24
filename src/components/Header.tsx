@@ -44,7 +44,7 @@ const Header = () => {
       {/* Main nav */}
       <div className="container-industrial flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoMagone} alt="Magone - Máquinas Injetoras e Moldes" className="h-12 w-auto" />
+          <img src={logoMagone} alt="Magone - Máquinas & Sistemas" className="h-16 md:h-20 w-auto" />
         </Link>
 
         {/* Desktop nav */}
