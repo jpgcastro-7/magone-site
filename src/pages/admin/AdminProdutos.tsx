@@ -25,7 +25,7 @@ type Produto = {
   parceiro_id: string | null;
   preco: number | null;
   quantidade: number;
-  situacao: "Novo" | "Usado" | "Reformado";
+  situacao: ProdutoSituacao;
   departamento_id: string | null;
   imagens: string[];
   marcas?: { nome: string } | null;
@@ -107,7 +107,7 @@ const AdminProdutos = () => {
         parceiro_id: form.parceiro_id || null,
         preco: form.preco ? parseFloat(form.preco) : null,
         quantidade: parseInt(form.quantidade) || 0,
-        situacao: form.situacao as "Novo" | "Usado" | "Reformado",
+        situacao: form.situacao as ProdutoSituacao,
         departamento_id: form.departamento_id || null,
         imagens: imageUrls,
       };
@@ -251,7 +251,7 @@ const AdminProdutos = () => {
                 </div>
                 <div className="space-y-2">
                   <Label>Situação *</Label>
-                  <Select value={form.situacao} onValueChange={(v) => setForm({ ...form, situacao: v as "Novo" | "Usado" | "Reformado" })}>
+                  <Select value={form.situacao} onValueChange={(v) => setForm({ ...form, situacao: v as ProdutoSituacao })}>
                     <SelectTrigger><SelectValue /></SelectTrigger>
                     <SelectContent>
                       <SelectItem value="Novo">Novo</SelectItem>
