@@ -14,7 +14,151 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      departamentos: {
+        Row: {
+          created_at: string
+          descricao: string | null
+          id: string
+          nome: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          descricao?: string | null
+          id?: string
+          nome: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          descricao?: string | null
+          id?: string
+          nome?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      marcas: {
+        Row: {
+          created_at: string
+          id: string
+          nome: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          nome: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          nome?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      parceiros: {
+        Row: {
+          created_at: string
+          detalhes: string | null
+          id: string
+          nome: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          detalhes?: string | null
+          id?: string
+          nome: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          detalhes?: string | null
+          id?: string
+          nome?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      produtos: {
+        Row: {
+          ano: number | null
+          created_at: string
+          departamento_id: string | null
+          descricao: string | null
+          id: string
+          imagens: string[] | null
+          marca_id: string | null
+          modelo: string | null
+          nome: string
+          parceiro_id: string | null
+          preco: number | null
+          quantidade: number
+          referencia: string
+          situacao: Database["public"]["Enums"]["produto_situacao"]
+          updated_at: string
+        }
+        Insert: {
+          ano?: number | null
+          created_at?: string
+          departamento_id?: string | null
+          descricao?: string | null
+          id?: string
+          imagens?: string[] | null
+          marca_id?: string | null
+          modelo?: string | null
+          nome: string
+          parceiro_id?: string | null
+          preco?: number | null
+          quantidade?: number
+          referencia: string
+          situacao?: Database["public"]["Enums"]["produto_situacao"]
+          updated_at?: string
+        }
+        Update: {
+          ano?: number | null
+          created_at?: string
+          departamento_id?: string | null
+          descricao?: string | null
+          id?: string
+          imagens?: string[] | null
+          marca_id?: string | null
+          modelo?: string | null
+          nome?: string
+          parceiro_id?: string | null
+          preco?: number | null
+          quantidade?: number
+          referencia?: string
+          situacao?: Database["public"]["Enums"]["produto_situacao"]
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "produtos_departamento_id_fkey"
+            columns: ["departamento_id"]
+            isOneToOne: false
+            referencedRelation: "departamentos"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "produtos_marca_id_fkey"
+            columns: ["marca_id"]
+            isOneToOne: false
+            referencedRelation: "marcas"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "produtos_parceiro_id_fkey"
+            columns: ["parceiro_id"]
+            isOneToOne: false
+            referencedRelation: "parceiros"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +167,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      produto_situacao: "Novo" | "Usado" | "Reformado"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +294,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      produto_situacao: ["Novo", "Usado", "Reformado"],
+    },
   },
 } as const
