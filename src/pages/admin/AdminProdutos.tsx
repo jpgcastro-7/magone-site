@@ -10,6 +10,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 import { Plus, Pencil, Trash2, Search, Upload } from "lucide-react";
+import type { Database } from "@/integrations/supabase/types";
+
+type ProdutoSituacao = Database["public"]["Enums"]["produto_situacao"];
 
 type Produto = {
   id: string;
@@ -40,7 +43,7 @@ const emptyForm = {
   parceiro_id: "",
   preco: "",
   quantidade: "0",
-  situacao: "Usado" as const,
+  situacao: "Usado" as Database["public"]["Enums"]["produto_situacao"],
   departamento_id: "",
 };
 
