@@ -24,7 +24,7 @@ const valoresAtendimento = [
   },
   {
     icon: TrendingUp,
-    title: "Resultados que Impulsionam",
+    title: "Encontre a máquina certa para elevar o nível da sua produção",
     description: "Ajudamos sua indústria a crescer com equipamentos que maximizam sua produtividade.",
   },
 ];
