@@ -1,31 +1,31 @@
 import { motion } from "framer-motion";
-import { Clock, Award, ShieldCheck, ThumbsUp, Factory } from "lucide-react";
+import { Clock, Award, HeartHandshake, Users, TrendingUp } from "lucide-react";
 
 const valoresAtendimento = [
   {
     icon: Award,
-    title: "+30 Anos de Experiência",
-    description: "Tradição e know-how no mercado de máquinas injetoras desde 1994.",
+    title: "+20 Anos de Experiência",
+    description: "Tradição e know-how no mercado de máquinas injetoras desde 2004.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Satisfação Garantida",
+    description: "Seu sucesso é o nosso sucesso. Trabalhamos para superar suas expectativas em cada negociação.",
   },
   {
     icon: Clock,
     title: "Atendimento Rápido",
-    description: "Resposta ágil aos orçamentos e demandas. Seu tempo é valioso e respeitamos isso.",
+    description: "Resposta ágil aos orçamentos. Valorizamos seu tempo e agilizamos seu processo produtivo.",
   },
   {
-    icon: ShieldCheck,
-    title: "Garantia de Qualidade",
-    description: "Todas as máquinas passam por inspeção rigorosa antes da entrega.",
+    icon: Users,
+    title: "Relacionamento de Confiança",
+    description: "Construímos parcerias duradouras baseadas em transparência, respeito e resultados.",
   },
   {
-    icon: Factory,
-    title: "Know-how Industrial",
-    description: "Entendemos as necessidades da indústria plástica e oferecemos as melhores soluções.",
-  },
-  {
-    icon: ThumbsUp,
-    title: "Negociação Justa",
-    description: "Preços competitivos e condições de pagamento facilitadas para seu negócio.",
+    icon: TrendingUp,
+    title: "Resultados que Impulsionam",
+    description: "Ajudamos sua indústria a crescer com equipamentos que maximizam sua produtividade.",
   },
 ];
 
