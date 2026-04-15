@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Headphones, Clock, Award, ShieldCheck, MessageCircle, Truck } from "lucide-react";
+import { Clock, Award, ShieldCheck, ThumbsUp, Factory } from "lucide-react";
 
 const valoresAtendimento = [
   {
-    icon: Headphones,
-    title: "Suporte Especializado",
-    description: "Equipe técnica qualificada para assessorar na escolha da máquina ideal para seu processo produtivo.",
+    icon: Award,
+    title: "+30 Anos de Experiência",
+    description: "Tradição e know-how no mercado de máquinas injetoras desde 1994.",
   },
   {
     icon: Clock,
@@ -13,24 +13,19 @@ const valoresAtendimento = [
     description: "Resposta ágil aos orçamentos e demandas. Seu tempo é valioso e respeitamos isso.",
   },
   {
-    icon: Award,
-    title: "+30 Anos de Experiência",
-    description: "Tradição e know-how no mercado de máquinas injetoras desde 1994.",
-  },
-  {
     icon: ShieldCheck,
     title: "Garantia de Qualidade",
     description: "Todas as máquinas passam por inspeção rigorosa antes da entrega.",
   },
   {
-    icon: MessageCircle,
-    title: "Consultoria Técnica",
-    description: "Orientação personalizada para otimizar sua produção e investimento.",
+    icon: Factory,
+    title: "Know-how Industrial",
+    description: "Entendemos as necessidades da indústria plástica e oferecemos as melhores soluções.",
   },
   {
-    icon: Truck,
-    title: "Logística Completa",
-    description: "Organizamos todo o transporte e instalação da sua máquina com segurança.",
+    icon: ThumbsUp,
+    title: "Negociação Justa",
+    description: "Preços competitivos e condições de pagamento facilitadas para seu negócio.",
   },
 ];
 
