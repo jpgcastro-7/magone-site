@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const services = [
   {
     icon: ShoppingCart,
-    title: "Compra e Venda de Injetoras",
-    description: "Máquinas injetoras novas e usadas das melhores marcas do mercado mundial.",
+    title: "Venda de Equipamentos Usados",
+    description: "Anunciamos e vendemos seus equipamentos ociosos. Remunerados somente no sucesso.",
     href: "/servicos/compra-venda-injetoras",
   },
   {
@@ -62,7 +62,7 @@ const ServicesSection = () => {
             Nossos Serviços
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Soluções completas para a indústria de transformação plástica, desde máquinas injetoras até fabricação de moldes.
+            Divulgamos e vendemos equipamentos usados para a indústria de transformação plástica. Remunerados somente no sucesso.
           </p>
         </motion.div>
 

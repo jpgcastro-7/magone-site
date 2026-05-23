@@ -10,7 +10,7 @@ const Services = () => {
     <>
       <SEOHead
         title="Serviços - Máquinas Injetoras, Moldes e Equipamentos"
-        description="Conheça nossos serviços: compra e venda de injetoras, fabricação de moldes, sopradoras, extrusoras e equipamentos industriais para plástico."
+        description="Conheça nossos serviços: divulgação e venda de equipamentos usados para plástico. Injetoras, sopradoras, extrusoras, moldes e mais."
         canonical="/servicos"
       />
       <Header />

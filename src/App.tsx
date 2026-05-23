@@ -13,6 +13,8 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import OndeEstamos from "./pages/OndeEstamos";
+import MachineDetail from "./pages/MachineDetail";
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminLayout from "./pages/admin/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
@@ -40,6 +42,8 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contato" element={<Contact />} />
+            <Route path="/onde-estamos" element={<OndeEstamos />} />
+            <Route path="/maquinas/:id" element={<MachineDetail />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin" element={<RequireAuth><AdminLayout /></RequireAuth>}>
               <Route index element={<Dashboard />} />

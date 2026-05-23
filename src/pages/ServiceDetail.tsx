@@ -11,11 +11,11 @@ import heroImg from "@/assets/hero-industrial.jpg";
 
 const serviceData: Record<string, { title: string; h1: string; description: string; metaDesc: string; benefits: string[]; image: string }> = {
   "compra-venda-injetoras": {
-    title: "Compra e Venda de Máquinas Injetoras",
-    h1: "Compra e Venda de Máquinas Injetoras",
-    description: "A Magone é especialista em compra e venda de máquinas injetoras novas e usadas. Com mais de 30 anos de experiência no mercado, oferecemos as melhores marcas com garantia de procedência e funcionamento. Realizamos avaliação técnica completa, negociação transparente e logística para todo o Brasil. Se você precisa comprar uma injetora ou vender equipamentos ociosos, somos a melhor opção do mercado.",
-    metaDesc: "Compra e venda de máquinas injetoras novas e usadas. Melhores marcas: Engel, Haitian, Romi, Borche. +30 anos de experiência. Solicite orçamento!",
-    benefits: ["Máquinas revisadas com garantia", "Melhores marcas mundiais", "Avaliação técnica completa", "Logística para todo o Brasil", "Condições de pagamento flexíveis", "Suporte pós-venda"],
+    title: "Venda de Equipamentos Usados para Plástico",
+    h1: "Venda de Equipamentos Usados",
+    description: "A Magone anuncia e vende seus equipamentos ociosos para a indústria plástica. Desde 2000 no mercado, trabalhamos exclusivamente com equipamentos usados — injetoras, sopradoras, extrusoras, moldes e periféricos. Você nos envia fotos, características e o preço pretendido, e nós cuidamos de toda a divulgação e negociação. Somos remunerados somente no sucesso do negócio, sem nenhum custo antecipado para você.",
+    metaDesc: "Venda de equipamentos usados para plástico. Injetoras, sopradoras, extrusoras e moldes. Desde 2000. Remunerados só no sucesso!",
+    benefits: ["Sem custo antecipado — remunerados só no sucesso", "Divulgação para mais de 3 mil clientes no Brasil", "Assessoria técnica com especificações detalhadas", "Fotografias profissionais dos equipamentos", "Negociação transparente entre comprador e vendedor", "Atendimento em todo o Brasil"],
     image: heroImg,
   },
   "injetoras-plastico": {
@@ -46,7 +46,7 @@ const serviceData: Record<string, { title: string; h1: string; description: stri
     title: "Sopradoras Industriais",
     h1: "Sopradoras para Indústria Plástica",
     description: "Máquinas sopradoras para fabricação de embalagens plásticas, frascos, galões e recipientes. Oferecemos sopradoras de extrusão e injeção-sopro das melhores marcas, com capacidades variadas para atender desde pequenas até grandes produções.",
-    metaDesc: "Sopradoras industriais para fabricação de embalagens plásticas. Máquinas novas e usadas. Solicite orçamento!",
+    metaDesc: "Sopradoras industriais usadas para fabricação de embalagens plásticas. Solicite orçamento!",
     benefits: ["Alta velocidade de produção", "Versatilidade de volumes", "Baixo consumo energético", "Troca rápida de moldes", "Controle preciso de espessura", "Produção contínua"],
     image: heroImg,
   },
@@ -54,7 +54,7 @@ const serviceData: Record<string, { title: string; h1: string; description: stri
     title: "Extrusoras Industriais",
     h1: "Extrusoras para Indústria Plástica",
     description: "Extrusoras para produção contínua de perfis, tubos, chapas, filmes e diversos produtos plásticos. Trabalhamos com extrusoras mono-rosca e dupla-rosca para diferentes aplicações industriais.",
-    metaDesc: "Extrusoras industriais para perfis, tubos e chapas plásticas. Máquinas novas e usadas com garantia. Solicite orçamento!",
+    metaDesc: "Extrusoras industriais usadas para perfis, tubos e chapas plásticas. Solicite orçamento!",
     benefits: ["Produção contínua", "Versatilidade de produtos", "Alta eficiência energética", "Controle preciso de temperatura", "Fácil operação", "Baixa manutenção"],
     image: moldImg,
   },

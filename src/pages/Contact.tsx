@@ -75,6 +75,47 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        {/* Newsletter */}
+        <section id="newsletter" className="section-padding bg-muted/30">
+          <div className="container-industrial max-w-2xl mx-auto text-center">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <span className="text-sm font-semibold text-industrial-accent font-heading uppercase tracking-wider">Fique por dentro</span>
+              <h2 className="font-heading text-3xl font-bold text-foreground mt-2 mb-3">Receba Novidades por E-mail</h2>
+              <p className="text-muted-foreground mb-8">Cadastre sua empresa e receba em primeira mão as melhores oportunidades de máquinas e equipamentos.</p>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const form = e.target as HTMLFormElement;
+                  const empresa = (form.elements.namedItem("empresa") as HTMLInputElement).value;
+                  const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+                  window.location.href = `mailto:magone@magone.com.br?subject=Cadastro de Newsletter&body=Empresa: ${empresa}%0AE-mail: ${email}`;
+                }}
+                className="flex flex-col gap-3"
+              >
+                <input
+                  name="empresa"
+                  type="text"
+                  required
+                  placeholder="Nome da sua empresa"
+                  className="w-full rounded-lg border border-border bg-card px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Seu melhor e-mail"
+                  className="w-full rounded-lg border border-border bg-card px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <button
+                  type="submit"
+                  className="w-full rounded-lg bg-primary px-6 py-3 font-heading font-bold text-primary-foreground hover:bg-primary/90 transition-colors"
+                >
+                  Cadastrar
+                </button>
+              </form>
+            </motion.div>
+          </div>
+        </section>
       </main>
       <Footer />
       <WhatsAppFloat />

@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <h3 className="font-heading text-xl font-bold mb-4">Magone</h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-4">
-              Há mais de 20 anos conectando você às melhores oportunidades de negócio no mercado de máquinas injetoras, moldes e equipamentos industriais para plástico.
+              Desde 2000 divulgando e vendendo equipamentos usados para a indústria plástica. Remunerados somente no sucesso do negócio.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
             <h4 className="font-heading text-lg font-semibold mb-4">Serviços</h4>
             <ul className="space-y-2 text-sm">
               {[
-                "Compra e Venda de Injetoras",
+                "Venda de Equipamentos Usados",
                 "Injetoras para Plástico",
                 "Injetoras para Zamak",
                 "Fabricação de Moldes",

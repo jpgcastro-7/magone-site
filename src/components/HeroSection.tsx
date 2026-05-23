@@ -27,12 +27,12 @@ const HeroSection = () => {
             +20 anos de experiência
           </span>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-primary-foreground mb-6">
-            Compra e Venda de{" "}
-            <span className="text-gradient">Máquinas Injetoras</span>{" "}
+            Anúncio e Venda de{" "}
+            <span className="text-gradient">Equipamentos Usados</span>{" "}
             para Plástico
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed">
-            Há mais de 20 anos conectando você às melhores oportunidades de negócio. Máquinas novas e usadas, moldes e equipamentos industriais para indústria plástica.
+            Desde 2000 divulgamos e vendemos seus equipamentos ociosos. Somos remunerados somente no sucesso do negócio, sem nenhum custo para você.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

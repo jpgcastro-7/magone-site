@@ -4,19 +4,30 @@ import { Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
-const types = ["Todos", "Injetora", "Sopradora", "Extrusora"];
-const brands = ["Todos", "Haitian", "Engel", "Borche", "Romi", "Chen Hsong", "BMB", "Bekum", "Battenfeld"];
+const categories = [
+  { label: "Todos os Produtos", dept: "" },
+  { label: "Equipamentos Diversos", dept: "Equipamentos Diversos" },
+  { label: "Extrusoras", dept: "Extrusoras" },
+  { label: "Fabricação de Moldes", dept: "Fabricação de Moldes" },
+  { label: "─── Injetoras", dept: "", disabled: true },
+  { label: "    Injetoras para Plástico", dept: "Injetoras para Plástico" },
+  { label: "    Injetoras para Zamak e Alumínio", dept: "Injetoras para Zamak e Alumínio" },
+  { label: "─── Moldes", dept: "", disabled: true },
+  { label: "    Moldes Brinquedos", dept: "Moldes Brinquedos" },
+  { label: "    Moldes Industriais", dept: "Moldes Industriais" },
+  { label: "    Moldes Utilidades Domésticas", dept: "Moldes Utilidades Domésticas" },
+  { label: "Negócios & Oportunidades", dept: "Negócios e Oportunidades" },
+  { label: "Sopradoras", dept: "Sopradoras" },
+];
 
 const MachineSearch = () => {
-  const [type, setType] = useState("Todos");
-  const [brand, setBrand] = useState("Todos");
+  const [dept, setDept] = useState("");
   const navigate = useNavigate();
 
   const handleSearch = () => {
     const params = new URLSearchParams();
-    if (type !== "Todos") params.set("tipo", type.toLowerCase());
-    if (brand !== "Todos") params.set("marca", brand);
-    navigate(`/maquinas?${params.toString()}`);
+    if (dept) params.set("dept", dept);
+    navigate(`/maquinas${dept ? `?${params.toString()}` : ""}`);
   };
 
   return (
@@ -34,26 +45,16 @@ const MachineSearch = () => {
           </h2>
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
-              <label className="block text-sm font-semibold text-foreground mb-2 font-heading">Tipo de Equipamento</label>
+              <label className="block text-sm font-semibold text-foreground mb-2 font-heading">Categoria</label>
               <select
-                value={type}
-                onChange={(e) => setType(e.target.value)}
+                value={dept}
+                onChange={(e) => setDept(e.target.value)}
                 className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm font-heading focus:outline-none focus:ring-2 focus:ring-ring"
               >
-                {types.map((t) => (
-                  <option key={t} value={t}>{t}</option>
-                ))}
-              </select>
-            </div>
-            <div className="flex-1">
-              <label className="block text-sm font-semibold text-foreground mb-2 font-heading">Marca</label>
-              <select
-                value={brand}
-                onChange={(e) => setBrand(e.target.value)}
-                className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm font-heading focus:outline-none focus:ring-2 focus:ring-ring"
-              >
-                {brands.map((b) => (
-                  <option key={b} value={b}>{b}</option>
+                {categories.map((c) => (
+                  <option key={c.label} value={c.dept} disabled={c.disabled}>
+                    {c.label}
+                  </option>
                 ))}
               </select>
             </div>

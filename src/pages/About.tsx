@@ -11,7 +11,7 @@ const About = () => {
     <>
       <SEOHead
         title="Sobre a Magone"
-        description="Conheça a Magone: mais de 20 anos de experiência em compra e venda de máquinas injetoras, fabricação de moldes e equipamentos industriais para plástico."
+        description="Conheça a Magone: desde 2000 anunciando e vendendo equipamentos usados para a indústria plástica. Remunerados somente no sucesso do negócio."
         canonical="/sobre"
       />
       <Header />
@@ -24,7 +24,7 @@ const About = () => {
           </div>
           <div className="container-industrial relative z-10 text-center">
             <h1 className="font-heading text-4xl md:text-5xl font-black text-primary-foreground">Sobre a Magone</h1>
-            <p className="text-primary-foreground/80 mt-4 text-lg max-w-2xl mx-auto">Há mais de 20 anos conectando você às melhores oportunidades de negócio</p>
+            <p className="text-primary-foreground/80 mt-4 text-lg max-w-2xl mx-auto">No mercado desde 2000, conectando você às melhores oportunidades de negócio</p>
           </div>
         </section>
 
@@ -34,9 +34,10 @@ const About = () => {
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
                 <h2 className="font-heading text-3xl font-bold text-foreground mb-6">Quem Somos</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>A Magone atua há mais de 30 anos no mercado de máquinas industriais para plástico, sendo referência na compra e venda de máquinas injetoras novas e usadas, fabricação de moldes para injeção plástica e fornecimento de equipamentos industriais diversos.</p>
-                  <p>Com sede em São Paulo, atendemos indústrias em todo o Brasil, oferecendo soluções completas para o setor de transformação plástica. Nossa equipe é formada por profissionais altamente qualificados e com vasta experiência no setor.</p>
-                  <p>Trabalhamos com as melhores marcas do mercado mundial, como Engel, Haitian, Romi, Borche, BMB, Chen Hsong, Arburg, entre outras, garantindo qualidade e confiabilidade em cada negociação.</p>
+                  <p>A <strong className="text-foreground">MAGONE Máquinas & Sistemas</strong> atua no mercado desde 2000, sendo referência na divulgação e venda de equipamentos usados para plástico: injetoras, sopradoras, moinhos, moldes e equipamentos diversos.</p>
+                  <p>Nossa missão é promover assistência e suporte completo tanto aos clientes compradores quanto aos clientes vendedores de máquinas e sistemas. Atuamos na negociação com mais de <strong className="text-foreground">3 mil clientes em todo o Brasil</strong>, por meio de sólidas parcerias construídas ao longo de décadas.</p>
+                  <p>Prestamos consultoria focada em redução de custos, melhorias operacionais e aumento de produtividade, com assessoria técnica detalhada. <strong className="text-foreground">Somos remunerados apenas no sucesso do negócio</strong>, sem gerar nenhum custo para o cliente.</p>
+                  <p>Nossa meta é a satisfação garantida do cliente.</p>
                 </div>
               </motion.div>
               <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -46,9 +47,9 @@ const About = () => {
 
             <div className="grid sm:grid-cols-3 gap-8 mt-20">
               {[
-                { icon: Shield, title: "Confiança", desc: "Mais de 3 décadas de credibilidade no mercado industrial." },
-                { icon: Award, title: "Qualidade", desc: "Máquinas revisadas e garantia de procedência comprovada." },
-                { icon: Users, title: "Atendimento", desc: "Equipe técnica especializada para encontrar a melhor solução." },
+                { icon: Shield, title: "Confiança", desc: "No mercado desde 2000, com mais de 3 mil clientes em todo o Brasil." },
+                { icon: Award, title: "Qualidade", desc: "Máquinas com especificações técnicas detalhadas e garantia de procedência." },
+                { icon: Users, title: "Sem custo inicial", desc: "Somos remunerados apenas no sucesso do negócio, sem custo para o cliente." },
               ].map((item, i) => (
                 <motion.div key={item.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center">
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-xl bg-industrial-accent/10 text-industrial-accent">
